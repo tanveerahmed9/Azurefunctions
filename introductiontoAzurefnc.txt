@@ -1,0 +1,31 @@
+1. App service plan created .
+
+Following are the list of resources associated with it:-
+
+1. ASP-Cloudskill..ID - App Service plan
+2. CludSkillfnc01 - App Service
+3. CloudSkillfnc01 - App Insight (for monitoring)
+4. storageaccount(someID) - Storage account 
+
+
+Go inside function app (2) and create a new function 
+Created an HTTP trigger function
+
+examining the function app:-
+
+- open the app service editor of the function app
+- This will give you VSCode experience for developing function app
+- wwwroot is the functions main folder
+- there will be a function app name folder created within the wwwroot.
+- on ls it will have function.json and run.ps1 
+- function.json contains  config an function level
+-run.ps1 is the actual code (compare C# and PS)
+at the global level we have below files:-
+
+1. profile.ps1 - it is same as what we have profile script in PS (This will get executed at every cold start of the function app 0 to 1)
+2. host.json - it contains config file at global level
+3. requirements.psd1 - manifest file , generally used to load dependancies
+
+
+
+ 
